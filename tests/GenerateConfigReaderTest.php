@@ -1,9 +1,9 @@
 <?php
 
-namespace Nwidart\Modules\Tests;
+namespace Diegonella\Modules\Tests;
 
-use Nwidart\Modules\Support\Config\GenerateConfigReader;
-use Nwidart\Modules\Support\Config\GeneratorPath;
+use Diegonella\Modules\Support\Config\GenerateConfigReader;
+use Diegonella\Modules\Support\Config\GeneratorPath;
 
 final class GenerateConfigReaderTest extends BaseTestCase
 {

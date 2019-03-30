@@ -11,7 +11,7 @@ return [
     |
     */
 
-    'namespace' => 'Modules',
+    'namespace' => 'Corals\Modules',
 
     /*
     |--------------------------------------------------------------------------
@@ -24,7 +24,7 @@ return [
 
     'stubs' => [
         'enabled' => false,
-        'path' => base_path() . '/vendor/nwidart/laravel-modules/src/Commands/stubs',
+        'path' => base_path() . '/vendor/diegonella/laravel-modules/src/Commands/stubs',
         'files' => [
             'routes/web' => 'Routes/web.php',
             'routes/api' => 'Routes/api.php',
@@ -67,7 +67,7 @@ return [
         |
         */
 
-        'modules' => base_path('Modules'),
+        'modules' => base_path('Corals/Modules'),
         /*
         |--------------------------------------------------------------------------
         | Modules assets path
@@ -148,10 +148,10 @@ return [
     */
 
     'composer' => [
-        'vendor' => 'nwidart',
+        'vendor' => 'diegonella',
         'author' => [
-            'name' => 'Nicolas Widart',
-            'email' => 'n.widart@gmail.com',
+            'name' => 'Diego Gonella',
+            'email' => 'diegonella@gmail.com',
         ],
     ],
     /*
@@ -164,7 +164,7 @@ return [
     */
     'cache' => [
         'enabled' => false,
-        'key' => 'laravel-modules',
+        'key' => 'laravel-modules-diegonella',
         'lifetime' => 60,
     ],
     /*

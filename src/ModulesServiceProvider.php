@@ -1,11 +1,11 @@
 <?php
 
-namespace Nwidart\Modules;
+namespace Diegonella\Modules;
 
 use Illuminate\Support\ServiceProvider;
-use Nwidart\Modules\Providers\BootstrapServiceProvider;
-use Nwidart\Modules\Providers\ConsoleServiceProvider;
-use Nwidart\Modules\Providers\ContractsServiceProvider;
+use Diegonella\Modules\Providers\BootstrapServiceProvider;
+use Diegonella\Modules\Providers\ConsoleServiceProvider;
+use Diegonella\Modules\Providers\ContractsServiceProvider;
 
 abstract class ModulesServiceProvider extends ServiceProvider
 {

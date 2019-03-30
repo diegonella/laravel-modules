@@ -2,19 +2,80 @@
 
 namespace $NAMESPACE$;
 
-use Illuminate\Auth\Access\HandlesAuthorization;
+use Corals\User\Models\User;
 
 class $CLASS$
 {
-    use HandlesAuthorization;
+    /**
+     * @param User $user
+     * @return bool
+     */
+    public function view(User $user)
+    {
+        /*
+        if ($user->can('Foo::bar.view')) {
+            return true;
+        }
+        return false;
+        */
+        return true;
+    }
 
     /**
-     * Create a new policy instance.
-     *
-     * @return void
+     * @param User $user
+     * @return bool
      */
-    public function __construct()
+    public function create(User $user)
     {
-        //
+        // return $user->can('Foo::bar.create');
+        return true;
+    }
+
+    /**
+     * @param User $user
+     * @param Bar $bar
+     * @return bool
+     */
+    public function update(User $user, Bar $bar)
+    {
+        /*
+        if ($user->can('Foo::bar.update')) {
+            return true;
+        }
+        return false;
+        */
+        return true;
+    }
+
+    /**
+     * @param User $user
+     * @param Bar $bar
+     * @return bool
+     */
+    public function destroy(User $user, Bar $bar)
+    {
+        
+        /*
+        if ($user->can('Foo::bar.delete')) {
+            return true;
+        }
+        return false;
+        */
+        return true;
+    }
+
+
+    /**
+     * @param $user
+     * @param $ability
+     * @return bool
+     */
+    public function before($user, $ability)
+    {
+        if (isSuperUser($user)) {
+            return true;
+        }
+
+        return null;
     }
 }

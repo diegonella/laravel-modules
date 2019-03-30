@@ -1,16 +1,16 @@
 <?php
 
-namespace Nwidart\Modules;
+namespace Diegonella\Modules;
 
 use Countable;
 use Illuminate\Container\Container;
 use Illuminate\Support\Str;
 use Illuminate\Support\Traits\Macroable;
-use Nwidart\Modules\Contracts\RepositoryInterface;
-use Nwidart\Modules\Exceptions\InvalidAssetPath;
-use Nwidart\Modules\Exceptions\ModuleNotFoundException;
-use Nwidart\Modules\Process\Installer;
-use Nwidart\Modules\Process\Updater;
+use Diegonella\Modules\Contracts\RepositoryInterface;
+use Diegonella\Modules\Exceptions\InvalidAssetPath;
+use Diegonella\Modules\Exceptions\ModuleNotFoundException;
+use Diegonella\Modules\Process\Installer;
+use Diegonella\Modules\Process\Updater;
 
 abstract class FileRepository implements RepositoryInterface, Countable
 {
@@ -106,7 +106,7 @@ abstract class FileRepository implements RepositoryInterface, Countable
      * @param Container $app
      * @param $name
      * @param $path
-     * @return \Nwidart\Modules\Module
+     * @return \Diegonella\Modules\Module
      */
     abstract protected function createModule(...$args);
 
@@ -482,7 +482,7 @@ abstract class FileRepository implements RepositoryInterface, Countable
     /**
      * Get module used for cli session.
      * @return string
-     * @throws \Nwidart\Modules\Exceptions\ModuleNotFoundException
+     * @throws \Diegonella\Modules\Exceptions\ModuleNotFoundException
      */
     public function getUsedNow() : string
     {
@@ -555,7 +555,7 @@ abstract class FileRepository implements RepositoryInterface, Countable
      * Enabling a specific module.
      * @param string $name
      * @return void
-     * @throws \Nwidart\Modules\Exceptions\ModuleNotFoundException
+     * @throws \Diegonella\Modules\Exceptions\ModuleNotFoundException
      */
     public function enable($name)
     {
@@ -566,7 +566,7 @@ abstract class FileRepository implements RepositoryInterface, Countable
      * Disabling a specific module.
      * @param string $name
      * @return void
-     * @throws \Nwidart\Modules\Exceptions\ModuleNotFoundException
+     * @throws \Diegonella\Modules\Exceptions\ModuleNotFoundException
      */
     public function disable($name)
     {
@@ -577,7 +577,7 @@ abstract class FileRepository implements RepositoryInterface, Countable
      * Delete a specific module.
      * @param string $name
      * @return bool
-     * @throws \Nwidart\Modules\Exceptions\ModuleNotFoundException
+     * @throws \Diegonella\Modules\Exceptions\ModuleNotFoundException
      */
     public function delete($name) : bool
     {

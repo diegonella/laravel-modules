@@ -1,14 +1,16 @@
 {
-    "name": "$STUDLY_NAME$",
-    "alias": "$LOWER_NAME$",
-    "description": "",
-    "keywords": [],
-    "active": 1,
-    "order": 0,
-    "providers": [
-        "$MODULE_NAMESPACE$\\$STUDLY_NAME$\\Providers\\$STUDLY_NAME$ServiceProvider"
-    ],
-    "aliases": {},
-    "files": [],
-    "requires": []
+  "code": "meemba-$LOWER_NAME$",
+  "name": "$STUDLY_NAME$",
+  "author": "diegonella",
+  "type": "module",
+  "description": "",
+  "namespace": "Corals\\Modules\\$STUDLY_NAME$\\",
+  "provider": "$STUDLY_NAME$ServiceProvider",
+  "version": "1.0",
+  "load_order": "999",
+  "folder": "$STUDLY_NAME$",
+  "autoload": "psr-4",
+  "icon": "fa fa-clone",
+  "require": {
+  }
 }

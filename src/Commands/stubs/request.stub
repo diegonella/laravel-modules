@@ -2,9 +2,9 @@
 
 namespace $NAMESPACE$;
 
-use Illuminate\Foundation\Http\FormRequest;
+use Corals\Foundation\Http\Requests\BaseRequest;
 
-class $CLASS$ extends FormRequest
+class $CLASS$ extends BaseRequest
 {
     /**
      * Get the validation rules that apply to the request.
@@ -13,9 +13,27 @@ class $CLASS$ extends FormRequest
      */
     public function rules()
     {
-        return [
-            //
-        ];
+        // $this->setModel(Bar::class);
+        $rules = parent::rules();
+        /*
+        if ($this->isUpdate() || $this->isStore()) {
+            $rules = array_merge($rules, [
+            ]);
+        }
+
+        if ($this->isStore()) {
+            $rules = array_merge($rules, [
+            ]);
+        }
+
+        if ($this->isUpdate()) {
+            $bar = $this->route('bar');
+
+            $rules = array_merge($rules, [
+            ]);
+        }
+        */
+        return $rules;
     }
 
     /**
@@ -25,6 +43,10 @@ class $CLASS$ extends FormRequest
      */
     public function authorize()
     {
+        /*
+        $this->setModel(Bar::class);
+        return $this->isAuthorized();
+        */
         return true;
     }
 }

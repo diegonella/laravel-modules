@@ -1,10 +1,10 @@
 <?php
 
-namespace Nwidart\Modules\Commands;
+namespace Diegonella\Modules\Commands;
 
 use Illuminate\Console\Command;
-use Nwidart\Modules\Json;
-use Nwidart\Modules\Process\Installer;
+use Diegonella\Modules\Json;
+use Diegonella\Modules\Process\Installer;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 

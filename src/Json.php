@@ -1,9 +1,9 @@
 <?php
 
-namespace Nwidart\Modules;
+namespace Diegonella\Modules;
 
 use Illuminate\Filesystem\Filesystem;
-use Nwidart\Modules\Exceptions\InvalidJsonException;
+use Diegonella\Modules\Exceptions\InvalidJsonException;
 
 class Json
 {

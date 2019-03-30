@@ -68,7 +68,7 @@ All Notable changes to `laravel-modules` will be documented in this file.
 
 ### Added
 
-- Laravel mix configuration (https://nwidart.com/laravel-modules/v3/basic-usage/compiling-assets)
+- Laravel mix configuration (https://diegonella.com/laravel-modules/v3/basic-usage/compiling-assets)
 
 ### Changed
 

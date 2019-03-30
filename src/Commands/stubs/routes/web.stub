@@ -11,6 +11,6 @@
 |
 */
 
-Route::prefix('$LOWER_NAME$')->group(function() {
-    Route::get('/', '$STUDLY_NAME$Controller@index');
+Route::group(['prefix' => '$LOWER_NAME$'], function () {
+    Route::resource('bars', '$STUDLY_NAME$Controller@index');
 });

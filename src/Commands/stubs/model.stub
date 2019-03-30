@@ -2,9 +2,20 @@
 
 namespace $NAMESPACE$;
 
-use Illuminate\Database\Eloquent\Model;
+use Corals\Foundation\Models\BaseModel;
+use Corals\Foundation\Transformers\PresentableTrait;
+use Spatie\Activitylog\Traits\LogsActivity;
 
-class $CLASS$ extends Model
+class $CLASS$ extends BaseModel
 {
-    protected $fillable = $FILLABLE$;
+    use PresentableTrait, LogsActivity;
+    /**
+     *  Model configuration.
+     * @var string
+     */
+    public $config = '$LOWER_NAME$.models.$CLASS$';
+
+    protected static $logAttributes = [];
+
+    protected $guarded = ['id'];
 }

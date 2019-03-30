@@ -1,8 +1,8 @@
 <?php
 
-namespace Nwidart\Modules\Tests\Commands;
+namespace Diegonella\Modules\Tests\Commands;
 
-use Nwidart\Modules\Tests\BaseTestCase;
+use Diegonella\Modules\Tests\BaseTestCase;
 use Spatie\Snapshots\MatchesSnapshots;
 
 class RuleMakeCommandTest extends BaseTestCase

@@ -1,8 +1,8 @@
 <?php
 
-namespace Nwidart\Modules\Process;
+namespace Diegonella\Modules\Process;
 
-use Nwidart\Modules\Module;
+use Diegonella\Modules\Module;
 
 class Updater extends Runner
 {

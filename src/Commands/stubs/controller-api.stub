@@ -4,9 +4,9 @@ namespace $CLASS_NAMESPACE$;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use Illuminate\Routing\Controller;
+use Corals\Foundation\Http\Controllers\APIBaseController;
 
-class $CLASS$ extends Controller
+class $CLASS$ extends APIBaseController
 {
     /**
      * Display a listing of the resource.

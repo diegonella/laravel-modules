@@ -1,12 +1,12 @@
 <?php
 
-namespace Nwidart\Modules\Commands;
+namespace Diegonella\Modules\Commands;
 
 use Illuminate\Support\Str;
-use Nwidart\Modules\Support\Config\GenerateConfigReader;
-use Nwidart\Modules\Support\Stub;
-use Nwidart\Modules\Traits\CanClearModulesCache;
-use Nwidart\Modules\Traits\ModuleCommandTrait;
+use Diegonella\Modules\Support\Config\GenerateConfigReader;
+use Diegonella\Modules\Support\Stub;
+use Diegonella\Modules\Traits\CanClearModulesCache;
+use Diegonella\Modules\Traits\ModuleCommandTrait;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Nwidart\Modules\Tests;
+namespace Diegonella\Modules\Tests;
 
-use Nwidart\Modules\Json;
+use Diegonella\Modules\Json;
 
 class LumenModuleTest extends BaseTestCase
 {
@@ -96,7 +96,7 @@ class LumenModuleTest extends BaseTestCase
     /** @test */
     public function it_reads_key_from_composer_json_file_via_helper_method()
     {
-        $this->assertEquals('nwidart/recipe', $this->module->getComposerAttr('name'));
+        $this->assertEquals('diegonella/recipe', $this->module->getComposerAttr('name'));
     }
 
     /** @test */
@@ -151,6 +151,6 @@ class LumenModuleTest extends BaseTestCase
     }
 }
 
-class LumenTestingModule extends \Nwidart\Modules\Lumen\Module
+class LumenTestingModule extends \Diegonella\Modules\Lumen\Module
 {
 }

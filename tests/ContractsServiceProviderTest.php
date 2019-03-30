@@ -1,9 +1,9 @@
 <?php
 
-namespace Nwidart\Modules\Tests;
+namespace Diegonella\Modules\Tests;
 
-use Nwidart\Modules\Contracts\RepositoryInterface;
-use Nwidart\Modules\Laravel\LaravelFileRepository;
+use Diegonella\Modules\Contracts\RepositoryInterface;
+use Diegonella\Modules\Laravel\LaravelFileRepository;
 
 class ContractsServiceProviderTest extends BaseTestCase
 {

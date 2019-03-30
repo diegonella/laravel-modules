@@ -1,8 +1,8 @@
 <?php
 
-namespace Nwidart\Modules\Publishing;
+namespace Diegonella\Modules\Publishing;
 
-use Nwidart\Modules\Support\Config\GenerateConfigReader;
+use Diegonella\Modules\Support\Config\GenerateConfigReader;
 
 class LangPublisher extends Publisher
 {

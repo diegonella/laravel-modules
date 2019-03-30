@@ -1,8 +1,8 @@
 <?php
 
-namespace Nwidart\Modules\Tests;
+namespace Diegonella\Modules\Tests;
 
-use Nwidart\Modules\Facades\Module;
+use Diegonella\Modules\Facades\Module;
 
 class ModuleFacadeTest extends BaseTestCase
 {
