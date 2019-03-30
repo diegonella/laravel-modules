@@ -1,6 +1,6 @@
 <?php
 
-namespace Nwidart\Modules\Contracts;
+namespace Diegonella\Modules\Contracts;
 
 interface RunableInterface
 {

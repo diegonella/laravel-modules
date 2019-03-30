@@ -1,8 +1,8 @@
 <?php
 
-namespace Nwidart\Modules;
+namespace Diegonella\Modules;
 
-use Nwidart\Modules\Support\Stub;
+use Diegonella\Modules\Support\Stub;
 
 class LumenModulesServiceProvider extends ModulesServiceProvider
 {

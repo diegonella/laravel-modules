@@ -1,14 +1,14 @@
 <?php
 
-namespace Nwidart\Modules\Generators;
+namespace Diegonella\Modules\Generators;
 
 use Illuminate\Config\Repository as Config;
 use Illuminate\Console\Command as Console;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Str;
-use Nwidart\Modules\FileRepository;
-use Nwidart\Modules\Support\Config\GenerateConfigReader;
-use Nwidart\Modules\Support\Stub;
+use Diegonella\Modules\FileRepository;
+use Diegonella\Modules\Support\Config\GenerateConfigReader;
+use Diegonella\Modules\Support\Stub;
 
 class ModuleGenerator extends Generator
 {
@@ -43,7 +43,7 @@ class ModuleGenerator extends Generator
     /**
      * The pingpong module instance.
      *
-     * @var \Nwidart\Modules\Module
+     * @var \Diegonella\Modules\Module
      */
     protected $module;
 
@@ -182,7 +182,7 @@ class ModuleGenerator extends Generator
     /**
      * Get the module instance.
      *
-     * @return \Nwidart\Modules\Module
+     * @return \Diegonella\Modules\Module
      */
     public function getModule()
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Nwidart\Modules;
+namespace Diegonella\Modules;
 
 use Illuminate\Container\Container;
 use Illuminate\Support\ServiceProvider;

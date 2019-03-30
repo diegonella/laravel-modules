@@ -1,10 +1,10 @@
 <?php
 
-namespace Nwidart\Modules\Commands;
+namespace Diegonella\Modules\Commands;
 
 use Illuminate\Console\Command;
-use Nwidart\Modules\Exceptions\FileAlreadyExistException;
-use Nwidart\Modules\Generators\FileGenerator;
+use Diegonella\Modules\Exceptions\FileAlreadyExistException;
+use Diegonella\Modules\Generators\FileGenerator;
 
 abstract class GeneratorCommand extends Command
 {
@@ -74,7 +74,7 @@ abstract class GeneratorCommand extends Command
     /**
      * Get class namespace.
      *
-     * @param \Nwidart\Modules\Module $module
+     * @param \Diegonella\Modules\Module $module
      *
      * @return string
      */

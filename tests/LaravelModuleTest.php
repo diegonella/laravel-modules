@@ -1,11 +1,11 @@
 <?php
 
-namespace Nwidart\Modules\Tests;
+namespace Diegonella\Modules\Tests;
 
 use Modules\Recipe\Providers\DeferredServiceProvider;
 use Modules\Recipe\Providers\RecipeServiceProvider;
-use Nwidart\Modules\Json;
-use Nwidart\Modules\Module;
+use Diegonella\Modules\Json;
+use Diegonella\Modules\Module;
 
 class ModuleTest extends BaseTestCase
 {
@@ -123,7 +123,7 @@ class ModuleTest extends BaseTestCase
     /** @test */
     public function it_reads_key_from_composer_json_file_via_helper_method()
     {
-        $this->assertEquals('nwidart/recipe', $this->module->getComposerAttr('name'));
+        $this->assertEquals('diegonella/recipe', $this->module->getComposerAttr('name'));
     }
 
     /** @test */
@@ -222,7 +222,7 @@ class ModuleTest extends BaseTestCase
     }
 }
 
-class TestingModule extends \Nwidart\Modules\Laravel\Module
+class TestingModule extends \Diegonella\Modules\Laravel\Module
 {
     public function registerProviders()
     {

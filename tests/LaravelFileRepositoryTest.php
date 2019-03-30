@@ -1,13 +1,13 @@
 <?php
 
-namespace Nwidart\Modules\Tests;
+namespace Diegonella\Modules\Tests;
 
 use Illuminate\Filesystem\Filesystem;
-use Nwidart\Modules\Collection;
-use Nwidart\Modules\Exceptions\InvalidAssetPath;
-use Nwidart\Modules\Exceptions\ModuleNotFoundException;
-use Nwidart\Modules\Laravel\LaravelFileRepository;
-use Nwidart\Modules\Module;
+use Diegonella\Modules\Collection;
+use Diegonella\Modules\Exceptions\InvalidAssetPath;
+use Diegonella\Modules\Exceptions\ModuleNotFoundException;
+use Diegonella\Modules\Laravel\LaravelFileRepository;
+use Diegonella\Modules\Module;
 
 class LaravelFileRepositoryTest extends BaseTestCase
 {
@@ -177,7 +177,7 @@ class LaravelFileRepositoryTest extends BaseTestCase
     {
         $this->app['config']->set('modules.stubs.enabled', true);
 
-        $this->assertEquals(base_path('vendor/nwidart/laravel-modules/src/Commands/stubs'), $this->repository->getStubPath());
+        $this->assertEquals(base_path('vendor/diegonella/laravel-modules/src/Commands/stubs'), $this->repository->getStubPath());
     }
 
     /** @test */

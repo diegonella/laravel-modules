@@ -1,9 +1,9 @@
 <?php
 
-namespace Nwidart\Modules\Commands;
+namespace Diegonella\Modules\Commands;
 
 use Illuminate\Console\Command;
-use Nwidart\Modules\Traits\ModuleCommandTrait;
+use Diegonella\Modules\Traits\ModuleCommandTrait;
 use Symfony\Component\Console\Input\InputArgument;
 
 class UpdateCommand extends Command
@@ -37,7 +37,7 @@ class UpdateCommand extends Command
             return;
         }
 
-        /** @var \Nwidart\Modules\Module $module */
+        /** @var \Diegonella\Modules\Module $module */
         foreach ($this->laravel['modules']->getOrdered() as $module) {
             $this->updateModule($module->getName());
         }

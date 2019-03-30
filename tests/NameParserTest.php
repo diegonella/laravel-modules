@@ -1,8 +1,8 @@
 <?php
 
-namespace Nwidart\Modules\Tests;
+namespace Diegonella\Modules\Tests;
 
-use Nwidart\Modules\Support\Migrations\NameParser;
+use Diegonella\Modules\Support\Migrations\NameParser;
 
 class NameParserTest extends \PHPUnit\Framework\TestCase
 {

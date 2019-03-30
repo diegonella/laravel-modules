@@ -1,8 +1,8 @@
 <?php
 
-namespace Nwidart\Modules\Tests;
+namespace Diegonella\Modules\Tests;
 
-use Nwidart\Modules\LaravelModulesServiceProvider;
+use Diegonella\Modules\LaravelModulesServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 abstract class BaseTestCase extends OrchestraTestCase

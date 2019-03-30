@@ -1,6 +1,6 @@
 <?php
 
-namespace Nwidart\Modules\Support;
+namespace Diegonella\Modules\Support;
 
 class Stub
 {

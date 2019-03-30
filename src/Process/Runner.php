@@ -1,9 +1,9 @@
 <?php
 
-namespace Nwidart\Modules\Process;
+namespace Diegonella\Modules\Process;
 
-use Nwidart\Modules\Contracts\RepositoryInterface;
-use Nwidart\Modules\Contracts\RunableInterface;
+use Diegonella\Modules\Contracts\RepositoryInterface;
+use Diegonella\Modules\Contracts\RunableInterface;
 
 class Runner implements RunableInterface
 {

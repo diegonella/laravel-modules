@@ -24,7 +24,7 @@ return [
 
     'stubs' => [
         'enabled' => false,
-        'path' => base_path() . '/vendor/nwidart/laravel-modules/src/Commands/stubs',
+        'path' => base_path() . '/vendor/diegonella/laravel-modules/src/Commands/stubs',
         'files' => [
             'routes/web' => 'Routes/web.php',
             'routes/api' => 'Routes/api.php',
@@ -148,7 +148,7 @@ return [
     */
 
     'composer' => [
-        'vendor' => 'nwidart',
+        'vendor' => 'diegonella',
         'author' => [
             'name' => 'Nicolas Widart',
             'email' => 'n.widart@gmail.com',

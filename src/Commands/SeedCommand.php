@@ -1,14 +1,14 @@
 <?php
 
-namespace Nwidart\Modules\Commands;
+namespace Diegonella\Modules\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Support\Str;
-use Nwidart\Modules\Contracts\RepositoryInterface;
-use Nwidart\Modules\Module;
-use Nwidart\Modules\Support\Config\GenerateConfigReader;
-use Nwidart\Modules\Traits\ModuleCommandTrait;
+use Diegonella\Modules\Contracts\RepositoryInterface;
+use Diegonella\Modules\Module;
+use Diegonella\Modules\Support\Config\GenerateConfigReader;
+use Diegonella\Modules\Traits\ModuleCommandTrait;
 use RuntimeException;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
