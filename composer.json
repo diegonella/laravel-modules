@@ -1,10 +1,10 @@
 {
-  "name": "nwidart/laravel-modules",
+  "name": "diegonella/laravel-modules",
   "description": "Laravel Module management",
   "keywords": [
     "modules",
     "laravel",
-    "nwidart",
+    "diegonella",
     "module",
     "rad"
   ],
@@ -31,7 +31,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Nwidart\\Modules\\": "src"
+      "Diegonella\\Modules\\": "src"
     },
     "files": [
       "src/helpers.php"
@@ -39,17 +39,17 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Nwidart\\Modules\\Tests\\": "tests",
+      "Diegonella\\Modules\\Tests\\": "tests",
       "Modules\\Recipe\\": "tests/stubs/valid/Recipe"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Nwidart\\Modules\\LaravelModulesServiceProvider"
+        "Diegonella\\Modules\\LaravelModulesServiceProvider"
       ],
       "aliases": {
-        "Module": "Nwidart\\Modules\\Facades\\Module"
+        "Module": "Diegonella\\Modules\\Facades\\Module"
       }
     },
     "branch-alias": {
